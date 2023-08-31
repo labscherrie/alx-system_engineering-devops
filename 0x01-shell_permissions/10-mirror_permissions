@@ -1,3 +1,2 @@
 #!/bin/bash
-source_mode=$(stat -c %a olleh)
-chmod "$source_mode" hello
+chmod --reference=olleh hello
